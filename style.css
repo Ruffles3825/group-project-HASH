@@ -1,24 +1,18 @@
-b {
-    color: orange;
+/* 
+reminder:
+#Pound is for IDs 
+. is for classes 
+*/
+#map {
+    height: 100%;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
-
-header {
-    background-color: rgb(39, 39, 39);
-    color: white;
-    font-size: 32pt;
-}
-
-@media (max-width: 690px) {
-    .btn {
-      font-size: 1rem;
-      margin: 16px 0px 0px 0px;
-      padding: 10px 15px;
-    }
-  }
-  
-  @media (max-width: 500px) {
-    .btn {
-      font-size: 0.8rem;
-    }
+.input-field {
+    background-color: white;
+    border-radius: 6%;
   }
