@@ -7,10 +7,8 @@ var state = document.getElementById("state");
 var zip = document.getElementById("zip");
 
 
-//---Code to access ATTOM API with JS---
-//var client = new OkHttpClient(); 
 
-fetch(`https://api.gateway.attomdata.com/propertyapi/v1.0.0/
+/*fetch(`https://api.gateway.attomdata.com/propertyapi/v1.0.0/
 property/detail?address1=4529%20Winona%20Court&address2=
 Denver%2C%20CO`, {
   headers: {
@@ -26,7 +24,7 @@ Denver%2C%20CO`, {
     mapsImageElement.setAttribute("src", mapUrl)
     console.log(result)
 })
-
+*/
 
 
 function confirmSearch(){
@@ -40,8 +38,7 @@ function confirmSearch(){
         sCity == "" ||
         sState == "" ||
         sZip == "")
-        return;
-console.log(sAddress)
+        return;   
 fetch(`https://api.gateway.attomdata.com/propertyapi/v1.0.0/
 property/detail?address1=${sAddress.value}&address2=
 ${sCity.value},${sState.value} ${sZip.value}`, {
