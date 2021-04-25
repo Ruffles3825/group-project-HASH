@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+    
     <head>
         <!--Import Google Icon Font-->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -8,92 +9,88 @@
         <!--Import materialize.css-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
         <!--Stylesheet link-->
-        <link rel="stylesheet" type="text/css" href="./style.css" />  
-        <title>Welcome to HASH</title>
+        <link rel="stylesheet" type="text/css" href="./style.css" />
+        <!--Title for webpage-->
+        <title>Welcome to HASH!</title>
     </head>
+  
+  <!-- Navbar goes here for future UI improvements :0)-->
 
     <body>
-
+        <!--Application Title-->
         <h1><strong>Project HASH</strong></h1>
-
-            
         <div class="row">
-        <!-- 
-        MATERIALIZE: Size reference guide
-            s-small screens under 600px
-            m-med screens 992px
-            l-large screens 993-1200px (more is xl) 
-        -->
+        <!-- MATERIALIZE: Size reference guide
+        s-small screens under 600px
+        m-med screens 992px
+        l-large screens 993-1200px (more is xl)-->
         
-
-        <!-- ************* Left Column: Search section ****************** -->
-        <div class="col s12 m4 l3"> 
-        <div class="card-panel cyan lighten-4">
-            <h4>Enter Address</h4>
-                <div class="row">
-                    <form id="form-location" class="col s12">
+<!-- ************* Left Column: Search section ****************** -->
+            <div class="col s12 m4 l3"> 
+                <div class="card-panel cyan lighten-4">
+                    <!--Field to enter address-->
+                    <h2>Enter Address</h2>
                         <div class="row">
-                            <div class="input-field col s10">
-                                <input id="address" type="text" class="validate">
-                                <label for="address">Address</label>
-                            </div>
-                            <div class="input-field col s6">
-                                <input id="city" type="text" class="validate">
-                                <label for="city">City</label>
-                            </div>
+                            <form id="form-location" class="col s12">
+                                <div class="row">
+                                    <!--Address Input Field-->
+                                    <div class="input-field col s10">
+                                        <input id="address" type="text" class="validate">
+                                        <label for="address">Address</label>
+                                    </div>
+                                    <!--City Input Field-->
+                                    <div class="input-field col s6">
+                                        <input id="city" type="text" class="validate">
+                                        <label for="city">City</label>
+                                    </div>
+                                    <!--State Input Field-->
+                                    <div class="input-field col s12">
+                                        <input id="state" type="text" class="validate">
+                                        <label for="state">State</label>
+                                    </div>
+                                    <!--Zipcode Input Field-->
+                                    <div class="input-field col s12">
+                                        <input id="zip" type="text" class="validate">
+                                        <label for="zip">Zipcode</label>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
-                        <div class="row">
-                            <div class="input-field col s12">
-                                <input id="state" type="text" class="validate">
-                                <label for="state">State</label>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="input-field col s12">
-                                <input id="zip" type="text" class="validate">
-                                <label for="zip">Zipcode</label>
-                            </div>
-                        </div>
-                    </form>
-                </div>
                 <!-- Search Button -->
                 <a class="waves-effect waves-light btn-large col s12" onclick="confirmSearch(); return false">
                     <i class="material-icons right">arrow_forward</i>Search</a>
                         <br>
                         <br>
                         <br>
+              </div>
             </div>
-            </div>
-        <!-- *********** END Left Column: Search section *************** -->
+<!-- *********** END Left Column: Search section *************** -->
 
-        <!-- ***********************Search History********************** -->
-        <!-- ********************END Search History********************* -->
+<!-- ***********************Search History (PENDING)********************** -->
 
-        <!-- ************Right Column: Results Section****************** -->
+<!-- ********************END Search History********************* -->
+
+<!-- ************Right Column: Results Section****************** -->
+            <!--Results section for Google Maps-->
             <div class="col s12 m8 l9"> 
-            <div class="card-panel deep-orange lighten-4">
+              <div class="card-panel deep-orange lighten-4">
                 <h4>Results for: </h4>
                 <img id="maps-img" class="maps"/>
-
+              </div>
             </div>
-            </div>
 
-        </div>
-        <!-- ********END Right Column: Results Section****************** -->
+<!-- ********END Right Column: Results Section****************** -->
 
-            
-
-        <!--JavaScript at end of body for optimized loading-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-
-    </body>
+        
+<!--JavaScript at end of body for optimized loading-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
 
 
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-
-    <!--NTS: load script.js last or after all libraries have been addressed -->
-    <script src="script.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<!--NTS: load script.js last or after all libraries have been addressed -->
+<script src="script.js"></script>
 
 </html>
